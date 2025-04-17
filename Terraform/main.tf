@@ -14,4 +14,7 @@ resource "azurerm_static_web_app" "serviceApp" {
   name = var.linux_web_app_name
   resource_group_name = azurerm_resource_group.rg.name
 
+  repository_url = "https://github.com/TanishqJecrc/JenkinsReactapp.git"
+  repository_branch = "main"
+  
 }
